@@ -3,17 +3,19 @@ Documentation    Login Tests
 
 Resource    ${EXECDIR}/resources/Base.robot
 
-Test Setup       Start Session
-Test Teardown    Finish Session
+Suite Setup      Start Session
+Test Teardown    Finish Test
 
 **Test Cases**
 
 User Login
-    Login With                  yukipereira@test.com    yuki
+    Login With                  yukipereira@test.com          yuki
     User Should Be Logged In
+    [Teardown]                  Take Screenshot And Logout
 
 
-User not signup
+
+User Not Signup
 
     Login With              yukipereira@gmail.com            yuki
     Alert Text Should Be    Usuário e/ou senha inválidos.

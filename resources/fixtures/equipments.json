@@ -1,0 +1,14 @@
+{
+  "violin": {
+    "thumbnail": "violino.png",
+    "name": "Violin",
+    "category": "Cordas",
+    "price": 200
+  },
+  "guitar": {
+    "thumbnail": "guitarra-strato.png",
+    "name": "Guitar",
+    "category": "Cordas",
+    "price": 350
+  }
+}
