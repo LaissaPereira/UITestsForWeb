@@ -25,6 +25,16 @@ Submit Equipment Form
 
 
 
-Should Be Equipo Is Available
+Equipment Should Be Visible
+    [Arguments]    ${equip_name}
+
+    Wait For Elements State 
+    ...                         css=tr >> text=${equip_name}
+    ...                         visible 
+    ...                         5
+    ...                         Equipment Not Be Visible
+
+
+
 
 

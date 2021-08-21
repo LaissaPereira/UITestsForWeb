@@ -10,9 +10,9 @@ Test Teardown    Finish Test
 **Test Cases**
 Add New Equipment Per User
 
-    ${equipment}             Get EquipmentJson     violin    
-    Remove Equipament        ${equipment}[name]
-    Login With               pink@test.com         pwd123    
+    ${equipment}                   Get EquipmentJson     violin    
+    Remove Equipament              ${equipment}[name]
+    Login With                     pink@test.com         pwd123    
     Go To Equipment Form
-    Submit Equipment Form    ${equipment}
-    #Should Be Equipo Is Available
+    Submit Equipment Form          ${equipment}
+    Equipment Should Be Visible    ${equipment}[name]
